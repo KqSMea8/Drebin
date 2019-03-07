@@ -11,7 +11,6 @@ class SmaliFeatures:
         self.restricted_apicall = list()
 
     def find_feature(self, path):
-        print(path)
         network_address = []
         used_permission = []
         suspicious_apicall = []
@@ -25,7 +24,6 @@ class SmaliFeatures:
                 tmp = self.find_network_feature(line)
                 if tmp:
                     network_address.append(tmp)
-
                 # used permission permission
                 tmp = self.find_used_permission_feature(line)
                 if tmp:
@@ -71,20 +69,17 @@ class SmaliFeatures:
 
     def find_Suspicious_api_call(self, context):
 
-        '''
+
         pattern = r'Landroid/(?:telephony/TelephonyManager;->(?:getNetworkOperator|getDeviceId|getPhoneType|' \
                   r'getSubscriberId|getLine1Number|getCellLocation|listen|getSimOperator)|' \
                   r'telephony/SmsManager;->sendTextMessage|' \
+                  r'telephony/gsm/GsmCellLocation;->(?:getLac|getCid)|' \
                   r'app/ActivityManager;->getRunning(?:AppProcesses|Tasks)|' \
                   r'content/pm/PackageManager;->getInstalledPackages)'
-        '''
-        pattern = r'Landroid/.*([^(graphics|view|widget|util])/.*([^(graphics|view|widget|util]);->.*\('
         p = re.search(pattern, context, re.IGNORECASE)
-        if p and re.search(r'get|http[s]|wifi|SMS|message|chmod|exec|listen|request|location|noti \
-                |start|web|open|remove|broadcast|contacts|phone',p.string, re.IGNORECASE) and not \
-                re.search('([^graphics|view|widget|util])', p.string):
+        if p:
             span = p.span()
-            return p.string[span[0]:span[1] - 1]
+            return p.string[span[0]:]
 
     def listDir(self, rootDir):
         file_list = os.listdir(rootDir)
