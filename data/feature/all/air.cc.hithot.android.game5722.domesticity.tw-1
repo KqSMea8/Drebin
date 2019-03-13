@@ -1,0 +1,10 @@
+RequiredPermission::android.permission.WAKE_LOCK
+RequiredPermission::android.permission.ACCESS_NETWORK_STATE
+RequiredPermission::android.permission.WRITE_EXTERNAL_STORAGE
+RequiredPermission::android.permission.ACCESS_WIFI_STATE
+RequiredPermission::android.permission.INTERNET
+RequiredPermission::com.android.vending.BILLING
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+NetAddress::translate.google.com
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

@@ -1,0 +1,17 @@
+RequiredPermission::android.permission.ACCESS_NETWORK_STATE
+RequiredPermission::android.permission.READ_PHONE_STATE
+RequiredPermission::android.permission.INTERNET
+RequiredPermission::android.permission.ACCESS_WIFI_STATE
+Intent::android.intent.action.MAIN
+Activity::com.google.ads.AdActivity
+Activity::.AppEntry
+UsedPermission::android.permission.ACCESS_NETWORK_STATE
+UsedPermission::android.permission.INTERNET
+NetAddress::www.gstatic.com
+NetAddress::a.admob.com
+SuspiciousAPI::Landroid/content/Context.getSystemService
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo
+RestrictedAPI::android.widget.VideoView.setVideoPath
+RestrictedAPI::android.widget.VideoView.stopPlayback
+RestrictedAPI::android.widget.VideoView.start
+RestrictedAPI::android.widget.VideoView.pause

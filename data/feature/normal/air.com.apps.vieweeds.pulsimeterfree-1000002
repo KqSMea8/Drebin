@@ -1,0 +1,12 @@
+RequiredPermission::android.permission.WAKE_LOCK
+RequiredPermission::android.permission.RECORD_AUDIO
+RequiredPermission::android.permission.CAMERA
+RequiredPermission::android.permission.ACCESS_NETWORK_STATE
+RequiredPermission::android.permission.WRITE_EXTERNAL_STORAGE
+RequiredPermission::android.permission.DISABLE_KEYGUARD
+RequiredPermission::android.permission.ACCESS_WIFI_STATE
+RequiredPermission::android.permission.READ_PHONE_STATE
+RequiredPermission::android.permission.INTERNET
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

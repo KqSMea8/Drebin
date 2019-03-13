@@ -1,0 +1,5 @@
+RequiredPermission::android.permission.INTERNET
+RequiredPermission::android.permission.ACCESS_FINE_LOCATION
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

@@ -1,0 +1,5 @@
+RequiredPermission::android.permission.ACCESS_NETWORK_STATE
+RequiredPermission::android.permission.WAKE_LOCK
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

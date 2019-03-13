@@ -1,0 +1,11 @@
+RequiredPermission::android.permission.ACCESS_NETWORK_STATE
+RequiredPermission::android.permission.INTERNET
+RequiredPermission::android.permission.WRITE_EXTERNAL_STORAGE
+Intent::android.intent.action.MAIN
+Activity::splash
+Activity::.YallasehaActivity
+Activity::ArticalesActivity
+Activity::subcategoryActivity
+NetAddress::yallaseha.com
+SuspiciousAPI::Landroid/os/Environment.getExternalStorageDirectory
+SuspiciousAPI::Landroid/content/Context.getSystemService

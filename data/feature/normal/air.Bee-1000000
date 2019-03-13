@@ -1,0 +1,3 @@
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

@@ -1,0 +1,6 @@
+RequiredPermission::android.permission.READ_PHONE_STATE
+RequiredPermission::android.permission.WAKE_LOCK
+RequiredPermission::android.permission.WRITE_EXTERNAL_STORAGE
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

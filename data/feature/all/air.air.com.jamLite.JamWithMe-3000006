@@ -1,0 +1,10 @@
+RequiredPermission::android.permission.WAKE_LOCK
+RequiredPermission::android.permission.WRITE_EXTERNAL_STORAGE
+RequiredPermission::com.android.vending.CHECK_LICENSE
+RequiredPermission::android.permission.VIBRATE
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+UsedPermission::android.permission.WAKE_LOCK
+UsedPermission::android.permission.VIBRATE
+SuspiciousAPI::Landroid/app/Activity.getSystemService
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

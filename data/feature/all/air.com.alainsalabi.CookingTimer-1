@@ -1,0 +1,12 @@
+RequiredPermission::android.permission.ACCESS_NETWORK_STATE
+RequiredPermission::android.permission.INTERNET
+RequiredPermission::android.permission.VIBRATE
+Intent::air.com.alainsalabi.CookingTimer.DELAYED_NOTIFICATION
+Intent::air.com.alainsalabi.CookingTimer.NOTIFICATION
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+BroadcastReceiver::com.distriqt.extension.notifications.NotificationsReceiver
+UsedPermission::android.permission.VIBRATE
+SuspiciousAPI::Landroid/app/Activity.getSystemService
+SuspiciousAPI::Landroid/content/Context.getSystemService
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

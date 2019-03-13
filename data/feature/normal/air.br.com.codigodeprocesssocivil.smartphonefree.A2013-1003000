@@ -1,0 +1,6 @@
+RequiredPermission::android.permission.ACCESS_NETWORK_STATE
+RequiredPermission::android.permission.INTERNET
+RequiredPermission::android.permission.ACCESS_WIFI_STATE
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

@@ -1,0 +1,6 @@
+RequiredPermission::android.permission.WAKE_LOCK
+RequiredPermission::android.permission.INTERNET
+RequiredPermission::android.permission.DISABLE_KEYGUARD
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo

@@ -1,4 +1,5 @@
 from sklearn import svm
+from sklearn.externals import joblib
 import numpy as np
 from vector import getData
 import matplotlib.pyplot as plt
@@ -35,12 +36,14 @@ def plot_learn_curve(estimator, title, X, y, ylim=None, cv=None, n_jobs=1, train
 
 
 if __name__ == '__main__':
-    train_data, train_label, test_data, test_label = getData(threshold=10000)
+    train_data, train_label, test_data, test_label = getData(threshold=200)
 
     clf = svm.SVC(gamma='scale', C=0.8, decision_function_shape='ovr', kernel='rbf')
     # 训练
     clf.fit(train_data, train_label)
     print('训练数据集得分： %f.' % clf.score(train_data, train_label))
+    # joblib.dump(clf, './out/model/SVM.pkl')
+
     # 绘制学习图像
     plt.figure(figsize=(9, 4), dpi=100)
     title = 'Learning Curve for Drebin'

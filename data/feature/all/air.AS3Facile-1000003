@@ -1,0 +1,5 @@
+RequiredPermission::android.permission.INTERNET
+HardwareComponent::android.hardware.touchscreen.multitouch
+Intent::android.intent.action.MAIN
+Activity::.AppEntry
+SuspiciousAPI::Landroid/content/pm/PackageManager.getPackageInfo
