@@ -9,7 +9,8 @@ from get_malware_to_csv import GetMalwareList
 if __name__ == '__main__':
     start = time.clock()
     # input apk dir
-    file_dir = './data/apk/original/normal//'
+    file_dir = './data/apk/original/normal/'
+    # file_dir = 'G:\Drebin_data\\malware'
     # output feature store in FeatureFile
     FeatureFile = '.\\data\\feature\\all\\'
 
